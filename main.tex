@@ -1,0 +1,55 @@
+\documentclass[11pt,a4paper]{article}
+
+% ---------- Packages ----------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}   % for German: [ngerman]
+\usepackage{lmodern}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage[style=ieee,backend=biber]{biblatex}
+\usepackage{hyperref}
+\usepackage{cleveref}
+
+\graphicspath{{figures/}}
+\addbibresource{references.bib}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!50!black,
+  citecolor=blue!50!black,
+  urlcolor=blue!50!black
+}
+
+% Simple TODO marker for collaborators
+\newcommand{\todo}[1]{\textcolor{red}{\textbf{TODO:} #1}}
+
+% ---------- Title ----------
+\title{Project Proposal\\[0.3em]\large Project Title Goes Here}
+\author{
+  Author One \\ \small e12345678
+  \and
+  Author Two \\ \small e12345679
+}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+\todo{Short summary of the proposed project (3--5 sentences).}
+\end{abstract}
+
+\input{sections/introduction}
+\input{sections/objectives}
+\input{sections/methodology}
+\input{sections/timeline}
+
+\printbibliography
+
+\end{document}
